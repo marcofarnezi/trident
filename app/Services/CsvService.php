@@ -14,7 +14,7 @@ class CsvService implements CsvInterface
      * @var ExportsInterface
      */
     private $export;
-    private $header;
+    private $header = [];
     private $data = [];
 
     /**
