@@ -1,0 +1,604 @@
+{
+	"id": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+	"name": "Trident",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "producs",
+			"description": "",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"order": [
+				"e4de9d35-7809-8201-c5c8-0e7e842c4d7d",
+				"69786714-6824-a366-7e41-303804e65674",
+				"ef7dce65-2970-b606-f71b-6587758b2106",
+				"e72e3d0e-6605-a9c7-efcc-d11284a724df",
+				"5bd87f1d-923d-a50c-3e9e-a7ad43374414"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "8e53014a-c2a6-cacb-bf08-c9acaae42f3d"
+		},
+		{
+			"name": "users",
+			"description": "",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"order": [
+				"79ed915e-8d3c-5dd7-8ba1-d75c2c3f2728",
+				"3b303866-238f-50dd-0021-1a4e2684c9a5",
+				"e42626cd-9cbb-d528-811d-41826f36cfeb",
+				"a515352e-85f9-5c7e-783f-44fa3794ecc1"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "cbaf4e33-9479-e429-b6f3-e05185bb67d2"
+		},
+		{
+			"name": "wishLists",
+			"description": "",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"order": [
+				"a00bff4c-17b2-eecc-b832-fc2ccc3381e2",
+				"d6d13161-1913-25a2-0b75-af8dd0d4251e",
+				"8989d71e-c8e4-fa55-7316-63bc7038bbdd",
+				"49fc5024-7cbe-34ef-6967-44f2260da36b",
+				"e4c09225-788c-184d-806a-6eacbf8d3407"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "1057fb2f-5910-ad3e-2d5c-ee210a1e0580"
+		}
+	],
+	"folders_order": [
+		"cbaf4e33-9479-e429-b6f3-e05185bb67d2",
+		"1057fb2f-5910-ad3e-2d5c-ee210a1e0580",
+		"8e53014a-c2a6-cacb-bf08-c9acaae42f3d"
+	],
+	"timestamp": 1573551999198,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3b303866-238f-50dd-0021-1a4e2684c9a5",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8000/users/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1573552154242,
+			"name": "list",
+			"description": "",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"responses": []
+		},
+		{
+			"id": "49fc5024-7cbe-34ef-6967-44f2260da36b",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nUser-Id: 1\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "User-Id",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8000/wishlists/2",
+			"folder": "1057fb2f-5910-ad3e-2d5c-ee210a1e0580",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "title",
+					"value": "wish list edited",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1573559172814,
+			"name": "update",
+			"description": "",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"responses": []
+		},
+		{
+			"id": "5bd87f1d-923d-a50c-3e9e-a7ad43374414",
+			"headers": "User-Id: 1\nWish-Id: 2\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "User-Id",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Wish-Id",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8000/products/3",
+			"folder": "8e53014a-c2a6-cacb-bf08-c9acaae42f3d",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1573560587941,
+			"name": "delete",
+			"description": "",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"responses": []
+		},
+		{
+			"id": "69786714-6824-a366-7e41-303804e65674",
+			"headers": "User-Id: 1\nWish-Id: 2\n",
+			"headerData": [
+				{
+					"key": "User-Id",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Wish-Id",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8000/products",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"data": null,
+			"dataMode": "params",
+			"name": "list",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1573559943490,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "8e53014a-c2a6-cacb-bf08-c9acaae42f3d"
+		},
+		{
+			"id": "79ed915e-8d3c-5dd7-8ba1-d75c2c3f2728",
+			"headers": "//Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:8000/users",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"data": [
+				{
+					"key": "name",
+					"value": "Marco Farmezi",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "marcofarnezi@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "save",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1573552103549,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "cbaf4e33-9479-e429-b6f3-e05185bb67d2"
+		},
+		{
+			"id": "8989d71e-c8e4-fa55-7316-63bc7038bbdd",
+			"headers": "User-Id: 1\n",
+			"headerData": [
+				{
+					"key": "User-Id",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8000/wishlists/2",
+			"folder": "1057fb2f-5910-ad3e-2d5c-ee210a1e0580",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1573559168553,
+			"name": "get",
+			"description": "",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"responses": []
+		},
+		{
+			"id": "a00bff4c-17b2-eecc-b832-fc2ccc3381e2",
+			"headers": "User-Id: 1\n",
+			"headerData": [
+				{
+					"key": "User-Id",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8000/wishlists",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"data": [
+				{
+					"key": "title",
+					"value": "first wish list",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "save",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1573555687742,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "1057fb2f-5910-ad3e-2d5c-ee210a1e0580"
+		},
+		{
+			"id": "a515352e-85f9-5c7e-783f-44fa3794ecc1",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/users/2",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"data": null,
+			"dataMode": "params",
+			"name": "delete",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1573552137395,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "cbaf4e33-9479-e429-b6f3-e05185bb67d2"
+		},
+		{
+			"id": "d6d13161-1913-25a2-0b75-af8dd0d4251e",
+			"headers": "User-Id: 1\n",
+			"headerData": [
+				{
+					"key": "User-Id",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8000/wishlists",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"data": null,
+			"dataMode": "params",
+			"name": "list",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1573555308790,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "1057fb2f-5910-ad3e-2d5c-ee210a1e0580"
+		},
+		{
+			"id": "e42626cd-9cbb-d528-811d-41826f36cfeb",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/users/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"data": [
+				{
+					"key": "name",
+					"value": "Marco Farmezi",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "marcofarnezi@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "update",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1573552123392,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "cbaf4e33-9479-e429-b6f3-e05185bb67d2"
+		},
+		{
+			"id": "e4c09225-788c-184d-806a-6eacbf8d3407",
+			"headers": "User-Id: 1\n",
+			"headerData": [
+				{
+					"key": "User-Id",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8000/wishlists/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"data": null,
+			"dataMode": "params",
+			"name": "delete",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1573555863871,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "1057fb2f-5910-ad3e-2d5c-ee210a1e0580"
+		},
+		{
+			"id": "e4de9d35-7809-8201-c5c8-0e7e842c4d7d",
+			"headers": "User-Id: 1\nWish-Id: 2\n",
+			"headerData": [
+				{
+					"key": "User-Id",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Wish-Id",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8000/products",
+			"folder": "8e53014a-c2a6-cacb-bf08-c9acaae42f3d",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "product2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "link",
+					"value": "www.teste.com/1232",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1573560425732,
+			"name": "save",
+			"description": "",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"responses": []
+		},
+		{
+			"id": "e72e3d0e-6605-a9c7-efcc-d11284a724df",
+			"headers": "User-Id: 1\nWish-Id: 2\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "User-Id",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Wish-Id",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8000/products/3",
+			"folder": "8e53014a-c2a6-cacb-bf08-c9acaae42f3d",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "name",
+					"value": "prod upd",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1573560556995,
+			"name": "update",
+			"description": "",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"responses": []
+		},
+		{
+			"id": "ef7dce65-2970-b606-f71b-6587758b2106",
+			"headers": "User-Id: 1\nWish-Id: 2\n",
+			"headerData": [
+				{
+					"key": "User-Id",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Wish-Id",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8000/products/3",
+			"folder": "8e53014a-c2a6-cacb-bf08-c9acaae42f3d",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1573560455159,
+			"name": "get",
+			"description": "",
+			"collectionId": "bce224a7-455c-f82a-9c75-53d7c2c14e9e",
+			"responses": []
+		}
+	]
+}

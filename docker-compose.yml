@@ -1,0 +1,30 @@
+
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    ports:
+      - 8000:80
+    volumes:
+      - .:/var/www/html
+    links:
+      - bancodedados
+  bancodedados:
+    image: mariadb:latest
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: app
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+  phpqa:
+    image: jakzal/phpqa:php7.1-alpine
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:80"
+    links:
+      - "bancodedados:db"
