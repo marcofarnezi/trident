@@ -32,9 +32,3 @@ $router->post('/products', ['middleware' => ['checkUserId', 'checkWishListId'], 
 $router->get('/products/{product_id}', ['middleware' => ['checkUserId', 'checkWishListId'], 'uses' => 'ProductController@show']);
 $router->put('/products/{product_id}', ['middleware' => ['checkUserId', 'checkWishListId'], 'uses' => 'ProductController@update']);
 $router->delete('/products/{product_id}', ['middleware' => ['checkUserId', 'checkWishListId'], 'uses' => 'ProductController@destroy']);
-
-$router->get('/teste', function () {
-   $teste = new \App\Exports\ProductCounterExports();
-   dd($teste->getData()->get());
-});
-
